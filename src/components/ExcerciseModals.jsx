@@ -35,10 +35,10 @@ const ExcerciseModals = ({ open, onClose }) => {
     <>
       {open && (
         <>
-        <div className="bg-blue h-full w-full ">
+        
 
           <div
-            className="modal-overlay  absolute w-full h-full bg-gray-800 bg-blue  shadow-2xl"
+            className="modal-overlay  absolute w-full h-full bg-gray-800  shadow-2xl"
             onClick={handleOverlayClick}
           >
 
@@ -70,7 +70,7 @@ const ExcerciseModals = ({ open, onClose }) => {
             </div>
           </div>
           </div>
-        </div>
+       
         </>
       )}
     </>

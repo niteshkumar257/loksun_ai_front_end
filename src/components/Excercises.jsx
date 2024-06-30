@@ -24,7 +24,7 @@ const Excercises = () => {
     {
       id: 3,
       name: "Ankle",
-      image: Im3,
+      image: Im8,
     },
     {
       id: 4,

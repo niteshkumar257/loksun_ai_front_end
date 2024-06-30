@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const Drawer = ({ open, onClose }) => {
+ 
+  
+
+  
+
+  
   return (
     <div
       className={`fixed top-0 left-0 h-full w-64 bg-blue transition-transform duration-300 z-50 ${
@@ -19,12 +26,13 @@ const Drawer = ({ open, onClose }) => {
               Home
             </Link>
           </li>
-          <li className="mb-2">
+          {/* <li className="mb-2">
             <Link to="/profile" className="text-gray-light font-bold" onClick={onClose}>
               Profile
             </Link>
-          </li>
-          <li className="mb-2">
+          </li> */}
+    
+          {/* <li className="mb-2">
             <Link to="/login" className="text-gray-light font-bold" onClick={onClose}>
               Login
             </Link>
@@ -34,7 +42,7 @@ const Drawer = ({ open, onClose }) => {
             <Link to="/register" className="text-gray-light font-bold" onClick={onClose}>
               Register
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>
