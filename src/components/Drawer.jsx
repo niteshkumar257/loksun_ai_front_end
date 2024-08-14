@@ -4,12 +4,17 @@ import { IoMdMenu } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 
 const Drawer = ({ open, onClose }) => {
+
+const navigate=useNavigate();
+  
+
+  const logout = () => {
+      setIsLogin(false);
+      localStorage.removeItem('token');
+    
+  };
+
  
-  
-
-  
-
-  
   return (
     <div
       className={`fixed top-0 left-0 h-full w-64 bg-blue transition-transform duration-300 z-50 ${
@@ -31,14 +36,11 @@ const Drawer = ({ open, onClose }) => {
               Profile
             </Link>
           </li> */}
-    
-          {/* <li className="mb-2">
-            <Link to="/login" className="text-gray-light font-bold" onClick={onClose}>
-              Login
-            </Link>
+          <li className="mb-2">
+          <Link to="/login" className="p-2 text-gray-dark font-bold" onClick={logout}>Logout</Link>
           </li>
 
-          <li className="mb-2">
+          {/* <li className="mb-2">
             <Link to="/register" className="text-gray-light font-bold" onClick={onClose}>
               Register
             </Link>
